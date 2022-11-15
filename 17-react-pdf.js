@@ -1,3 +1,5 @@
+// assernmet-10 chackout page 
+// -------------------------------------------------
 
 // npm config set legacy-peer-deps true
 // npm cache clean --force
@@ -27,9 +29,9 @@ const styles = StyleSheet.create({
 const doc = () => (
   <Document>
     <Page bookmark="Harry Potter and the Philosopher's Stone">
-     <Text >{name}</Text>
-<Text >{title}</Text>
-<Text >{about}</Text>
+      <Text >{name}</Text>
+      <Text >{title}</Text>
+      <Text >{about}</Text>
     </Page>
   </Document>
 );
@@ -38,9 +40,9 @@ const doc = () => (
 // এটা দিবেন বাটন যেটা ছিল না । ডাউন লোড করার জন্য ওটাকে ডিলিট করে ওই জায়গায়  বসিয়ে দিবে
 
 <div>
-    <PDFDownloadLink document={<MyDoc />} fileName="book.pdf">
-      {({ blob, url, loading, error }) =>
-        loading ? 'Loading document...' : 'Download now!'
-      }
-    </PDFDownloadLink>
+  <PDFDownloadLink document={<MyDoc />} fileName="book.pdf">
+    {({ blob, url, loading, error }) =>
+      loading ? 'Loading document...' : 'Download now!'
+    }
+  </PDFDownloadLink>
 </div>
